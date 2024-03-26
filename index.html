@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;background-color:#f48e8e}table{border-collapse:collapse;width:80%;box-shadow:0 4px 8px rgba(0,0,0,0.1);background-color:#fff;border-radius:8px}th,td{border:1px solid #ddd;padding:12px;text-align:left}th{background-color:#29d490;color:#fff;text-transform:uppercase;letter-spacing:1px}tr:hover{background-color:rgba(52,152,219,0.1)}button{padding:6px;border:none;width:30px;cursor:pointer;width:40px;height:40px;background-color:transparent}button:before{font-size:20px}.edit-btn,.delete-btn{background-color:#e67e22;color:#fff}.edit-btn:before{content:"✏️"}.delete-btn:before{content:"🗑"}.status-btn{font-weight:bold;text-transform:uppercase;padding:10px;border:none;border-radius:4px;cursor:pointer}.not-paid{background-color:#92f312;color:#fff;width: 120px;text-align: center;}.paid{background-color:#27ae60;color:#fff;width: 120px;text-align: center;}.processing{background-color:#8e44ad;color:#fff;width: 120px;text-align: center;}
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>INVOICE</th><th>NAME </th><th>Date</th><th>Status</th><th>Amount</th><th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1001</td><td>Haider</td><td>2024-02-28</td><td><button class="status-btn not-paid">Unpaid</button></td><td>$120.50</td><td><button class="edit-btn"></button><button class="delete-btn"></button></td>
+      </tr>
+      <tr>
+        <td>1002</td><td>Bilal</td><td>2024-02-29</td><td><button class="status-btn paid">Paid</button></td><td>$70.75</td><td><button class="edit-btn"></button><button class="delete-btn"></button></td>
+      </tr>
+      <tr>
+        <td>1003</td><td>Hassan</td><td>2024-02-10</td><td><button class="status-btn processing">Processing</button></td><td>$110.00</td><td><button class="edit-btn"></button><button class="delete-btn"></button></td>
+      </tr>
+      <tr>
+        <td>1004</td><td>Mudasir</td><td>2024-02-11</td><td><button class="status-btn paid">Paid</button></td><td>$100.25</td><td><button class="edit-btn"></button><button class="delete-btn"></button></td>
+      </tr>
+      <tr>
+        <td>1005</td><td>Imran</td><td>2024-02-12</td><td><button class="status-btn not-paid">Unpaid</button></td><td>$80.80</td><td><button class="edit-btn"></button><button class="delete-btn"></button></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
